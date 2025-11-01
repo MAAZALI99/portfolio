@@ -20,18 +20,6 @@ h1 {
     transform: translateX(-150px);
 }
 
-.nav1 {
-    animation-duration: 3s;
-    animation-name: slideInLeft;
-    animation-timing-function: linear;
-    animation-delay: 2s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: both;
-
-    transform: translateX(-150px);
-}
-
 @keyframes glow {
     from {
         text-shadow: 0 0 20px #00ffff;
@@ -101,4 +89,38 @@ header p {
     margin-top: 15px;
     line-height: 1.8;
     font-size: 1.1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: black;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+    border-radius: 5px;
 }
